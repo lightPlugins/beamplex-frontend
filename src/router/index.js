@@ -1,23 +1,28 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouterLayout } from 'vue-router-layout'
+import middleware from "@grafikri/vue-middleware"
+import home from './home'
+
 
 Vue.use(VueRouter)
+let route = [];
+route = route.concat(home)
+
+const RouterLayout = createRouterLayout(layout => {
+  // Resolves a layout component with layout type string.
+  return import('../layouts/' + layout + '.vue')
+})
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: '',
+    // Pass <RouterLayout> as the route component
+    component: RouterLayout,
+
+    // All child components will be applied with corresponding layout component
+    children: route
   },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
 ]
 
 const router = new VueRouter({
@@ -25,5 +30,7 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
+router.beforeEach(middleware())
 
 export default router

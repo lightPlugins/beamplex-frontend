@@ -4,4 +4,3 @@ module.exports = defineConfig({
     'vuetify'
   ]
 })
-// test
