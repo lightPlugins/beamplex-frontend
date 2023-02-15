@@ -1,215 +1,98 @@
 <template>
-  <v-container>
-    <v-row class="text-center pt-12">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
+  <v-container class="wrapper">
+    <v-container>
+      <v-row>
+        <v-col cols="12" sm="8" md="6">
+          <v-row class="pb-5">
+            <v-btn class="mr-2" small color="success"> new ! </v-btn>
+            <h1 class="title font-weight-thin">
+              Wir bieten Gameserver in Spielen wie Minecraft, CSGO ... etc an.
+            </h1>
+          </v-row>
 
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Beamplex
-        </h1>
+          <h1 class="pt-4 text-h2 font-weight-bold">"Gaming is not a hobby,</h1>
+          <h1 class="text-h2 font-weight-bold">its a way of life."</h1>
 
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
-        </p>
-      </v-col>
-    </v-row>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
+          <div class="pt-5">
+            <span>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et
+            </span>
+          </div>
 
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Beamplex
-        </h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
-        </p>
-      </v-col>
-    </v-row>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
-
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Beamplex
-        </h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
-        </p>
-      </v-col>
-    </v-row>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
-
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Beamplex
-        </h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
-        </p>
-      </v-col>
-    </v-row>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
-
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Beamplex
-        </h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
-        </p>
-      </v-col>
-    </v-row>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
-
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Beamplex
-        </h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
-        </p>
-      </v-col>
-    </v-row>
-
+          <v-btn class="mt-8 font-weight-bold" color="primary" large
+            >Jetzt beitreten</v-btn
+          >
+        </v-col>
+        <v-col cols="12" md="4" class="ml-16"> 
+          <img class="test" src="https://a-static.besthdwallpaper.com/ultravoilet-holo-wallpaper-1680x1260-38703_24.jpg">
+        
+        </v-col>
+      </v-row>
+    </v-container>
   </v-container>
-  
 </template>
 
 <script>
-  export default {
-    name: 'inside',
+export default {
+  name: "inside",
 
-    data: () => ({
-      ecosystem: [
+  data() {
+    return {
+      test: "Tickets insgesamt",
+      colors: [
+        "indigo",
+        "warning",
+        "pink darken-2",
+        "red lighten-1",
+        "deep-purple accent-4",
+      ],
+      slides: ["First", "Second", "Third", "Fourth", "Fifth"],
+      items: [
         {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader',
-        },
-        {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify',
-        },
-        {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify',
+          src: "https://cdn.shopify.com/s/files/1/0490/0696/8986/products/Wallpaper_Mockup_Kursiv1_cc625de1-9e05-4a1d-8724-5f7686f07e2a_533x.png",
         },
       ],
-      importantLinks: [
-        {
-          text: 'Documentation',
-          href: 'https://vuetifyjs.com',
-        },
-        {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
-        },
-        {
-          text: 'Made with Vuetify',
-          href: 'https://madewithvuejs.com/vuetify',
-        },
-        {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs',
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify',
-        },
-      ],
-      whatsNext: [
-        {
-          text: 'Explore components',
-          href: 'https://vuetifyjs.com/components/api-explorer',
-        },
-        {
-          text: 'Select a layout',
-          href: 'https://vuetifyjs.com/getting-started/pre-made-layouts',
-        },
-        {
-          text: 'Frequently Asked Questions',
-          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
-        },
-      ],
-    }),
-  }
+    };
+  },
+};
 </script>
+
+<style scoped>
+.shine:hover {
+  background: #dc143d;
+  box-shadow: 4px 4px 0px #dc143cb4;
+  box-shadow: -40px -40px 80px #dc143cb4;
+  box-shadow: 4px 4px 0px #dc143cb4;
+  transition: 0.5s;
+}
+
+.shine {
+  background: #dc143d;
+  box-shadow: 0 0 0px #dc143c22;
+  transition: 0.5s;
+}
+.wrapper {
+  padding-top: 120px;
+  padding-bottom: 32px;
+}
+
+.test {
+  border-radius: 15px;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.1rem;
+}
+</style>

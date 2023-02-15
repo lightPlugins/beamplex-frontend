@@ -9,7 +9,7 @@
           <v-col align="left">
             
             <v-toolbar-title
-              ><b>BEAMPLEX</b> | Multigaming
+              ><b>BEAMPLEX</b> | Dein Zuhause
             </v-toolbar-title>
           </v-col>
 
@@ -93,10 +93,28 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
 
-.navbar:hover {
-  color: #2a5f9d;
+.v-application {
+  font-family: 'Play' !important;
+}
+.v-application .text-h1 {
+  font-family: 'Play' !important;
+}
+.v-application .text-h2 {
+  font-family: 'Play' !important;
+}
+.v-application .text-h3 {
+  font-family: 'Play' !important;
+}
+.v-application .text-h4 {
+  font-family: 'Play' !important;
+}
+.v-application .text-h5 {
+  font-family: 'Play' !important;
+}
+.v-application .text-h6 {
+  font-family: 'Play' !important;
 }
 
 </style>
